@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hexgraph</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="post-content">
+                <h2>{{ title }}</h2>
+                <hr class="title-separator">
+                <div class="content">{{ content }}</div>
+            </section>
+            <a href="{{ url_for('index') }}" class="back-link">Back to Home</a>
+        </div>
+    </main>
+</body>
+</html>

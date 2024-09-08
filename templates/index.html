@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexgraph</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hexgraph</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="form-section">
+                <h2>Create a New Post</h2>
+                <form action="{{ url_for('create_post') }}" method="post">
+                    <input type="text" name="title" class="input-title" placeholder="Post Title" required>
+                    <div id="editor-container"></div>
+                    <textarea id="content" name="content" style="display:none;"></textarea>
+                    <button type="submit">Create Post</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <script>
+        var quill = new Quill('#editor-container', {
+            theme: 'snow',
+            modules: {
+                toolbar: [
+                    [{ 'header': '1' }, { 'header': '2' }, { 'header': '3' }, { 'header': '4' }, { 'header': '5' }, { 'font': [] }],
+                    [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+                    ['bold', 'italic', 'underline'],
+                    ['image', 'link'],
+                    [{ 'align': [] }],
+                    [{ 'color': [] }, { 'background': [] }],
+                    ['clean'],
+                ]
+            }
+        });
+    
+        document.querySelector('form').addEventListener('submit', function() {
+            document.querySelector('#content').value = quill.root.innerHTML;
+        });
+    </script>    
+</body>
+</html>
