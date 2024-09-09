@@ -34,6 +34,7 @@
             <section class="post-content">
                 <h2>{{ title }}</h2>
                 <hr class="title-separator">
+                <p class="post-date">{{ timestamp }}</p>
                 <div class="content">{{ content | safe }}</div>
             </section>
             <a href="{{ url_for('index') }}" class="back-link">Back to Home</a>

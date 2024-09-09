@@ -241,6 +241,14 @@ button:hover {
     margin: 0 auto;
 }
 
+.post-date {
+    font-size: 1.1em;
+    color: #777;
+    margin-bottom: 20px;
+    text-align: right;
+    font-style: italic;
+}
+
 @media only screen and (max-width: 768px) {
     header h1 {
         font-size: 1.5em;
