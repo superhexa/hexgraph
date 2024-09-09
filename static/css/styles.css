@@ -146,6 +146,15 @@ button:hover {
     color: #333;
 }
 
+.post-content img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+}
+
 .back-link {
     display: block;
     margin: 20px 0;
@@ -154,6 +163,82 @@ button:hover {
     color: #333;
     text-decoration: none;
     transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.ql-editor {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 2px solid #c0c0c0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ql-toolbar {
+    background: #f0f0f0;
+    border: 2px solid #c0c0c0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.ql-toolbar .ql-active {
+    background: #e0e0e0;
+}
+
+.ql-editor a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.ql-editor a:hover {
+    color: #004080;
+    text-decoration: underline;
+}
+
+.ql-editor h1,
+.ql-editor h2,
+.ql-editor h3,
+.ql-editor h4,
+.ql-editor h5,
+.ql-editor h6 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.ql-editor ul,
+.ql-editor ol {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+.ql-editor li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.ql-toolbar .ql-formats button {
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.ql-toolbar .ql-formats button:hover {
+    background: #e0e0e0;
+    transform: scale(1.05);
+}
+
+.ql-editor img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 768px) {
