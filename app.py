@@ -30,4 +30,4 @@ def view_post(post_id):
         return "Post not found", 404
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=1020)
+    app.run(port=1030)
