@@ -1,3 +1,6 @@
+![Screenshot from 2024-09-09 14-34-47](https://github.com/user-attachments/assets/43c7a319-846d-4c2e-a320-e3fec6b014ed)
+
+
 # Hexgraph
 
 Hexgraph is a simple web application built with Flask and Quill. It allows users to create and view posts with rich text formatting. This application uses a lightweight database client to store posts and provides a clean, modern user interface for interacting with the posts.
