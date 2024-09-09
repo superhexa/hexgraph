@@ -155,3 +155,43 @@ button:hover {
     text-decoration: none;
     transition: color 0.3s ease, transform 0.2s ease;
 }
+
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .input-title {
+        font-size: 1em;
+        padding: 12px;
+    }
+
+    .form-section {
+        padding: 20px;
+    }
+
+    #editor-container {
+        height: 300px;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 12px;
+    }
+
+    .post-content h2 {
+        font-size: 1.8em;
+    }
+
+    .content {
+        font-size: 1.1em;
+    }
+
+    .back-link {
+        font-size: 1em;
+    }
+}
