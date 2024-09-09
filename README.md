@@ -82,6 +82,9 @@ To get Hexgraph up and running on your local machine, follow these steps:
    - After creating a post, you'll be automatically redirected to the post's page.
    - You can also view posts by navigating to `http://127.0.0.1:1020/post/<post_id>`, replacing `<post_id>` with the actual ID of the post.
 
+## Live preview
+- https://hexgraph.catway.org
+
 ## Contributing
 
 Feel free to submit issues, fork the repository, and create pull requests. All contributions are welcome!
