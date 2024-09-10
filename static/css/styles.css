@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;700&display=swap');
 
-body {
+body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
@@ -8,6 +8,8 @@ body {
     color: #333;
     overflow-x: hidden;
     position: relative;
+    direction: ltr;
+    text-align: left;
 }
 
 header {
@@ -305,11 +307,15 @@ button:hover {
         background: #d0d0d0;
         transform: translateY(-3px);
     }
-    
     .post-content {
-        padding: 20px;
+        width: 87%;
+        max-width: 450px; 
+        height: auto; 
+        min-height: 200px;
+        padding: 30px; 
+        margin: 15px auto; 
         border: 1px solid #ddd;
-    }
+    }    
     
     .post-content h2 {
         font-size: 1.8em;
