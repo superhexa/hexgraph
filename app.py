@@ -24,13 +24,8 @@ def create_post():
 @app.route('/post/<post_id>')
 def view_post(post_id):
     post = db.get(post_id)
-    if post:
-        title = post['title']
-        content = post['content']
-        timestamp = post['timestamp']
-        return render_template('post.html', title=title, content=content, timestamp=timestamp)
-    else:
-        return "Post not found", 404
+    post['views'] = post.get('views', 0) + 1; db.set(post_id, post)
+    return render_template('post.html', title=post['title'], content=post['content'], timestamp=post['timestamp'], views=post['views']) if post else ("Post not found", 404)
 
 if __name__ == '__main__':
     app.run(port=1020)

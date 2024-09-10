@@ -251,6 +251,15 @@ button:hover {
     font-style: italic;
 }
 
+.post-views {
+    font-size: 1.1em;
+    color: #777;
+    margin-bottom: 10px; 
+    margin-top: -50px; 
+    text-align: left;
+    font-style: italic;
+}
+
 @media only screen and (max-width: 768px) {
     header {
         padding: 10px 15px;
@@ -307,6 +316,7 @@ button:hover {
         background: #d0d0d0;
         transform: translateY(-3px);
     }
+
     .post-content {
         width: 87%;
         max-width: 450px; 
@@ -315,7 +325,7 @@ button:hover {
         padding: 30px; 
         margin: 15px auto; 
         border: 1px solid #ddd;
-    }    
+    }
     
     .post-content h2 {
         font-size: 1.8em;
@@ -391,8 +401,19 @@ button:hover {
     }
     
     .post-date {
-        font-size: 1em;
-        text-align: center;
+        font-size: 1.1em; 
+        text-align: center; 
         color: #888;
+        margin-bottom: 10px; 
+        font-style: italic;
+    }
+
+    .post-views {
+        font-size: 1.1em; 
+        color: #777;
+        margin-bottom: 10px;
+        margin-top: 0; 
+        text-align: center; 
+        font-style: italic;
     }
 }
