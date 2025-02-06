@@ -1,10 +1,18 @@
+<<<<<<< HEAD
 ![Screenshot from 2024-09-09 14-34-47](https://github.com/user-attachments/assets/43c7a319-846d-4c2e-a320-e3fec6b014ed)
 
 
+=======
+>>>>>>> a063399 (Support docker)
 # Hexgraph
 
 Hexgraph is a simple web application built with Flask and Quill. It allows users to create and view posts with rich text formatting. This application uses a lightweight database client to store posts and provides a clean, modern user interface for interacting with the posts.
 
+<<<<<<< HEAD
+=======
+![Screenshot from 2024-09-09 14-34-47](https://github.com/user-attachments/assets/43c7a319-846d-4c2e-a320-e3fec6b014ed)
+
+>>>>>>> a063399 (Support docker)
 ## Features
 
 - **Create Posts:** Users can create new posts with a title and rich text content using the Quill editor.
@@ -32,7 +40,11 @@ To get Hexgraph up and running on your local machine, follow these steps:
 1. **Clone the Repository**
 
    ```bash
+<<<<<<< HEAD
    git clone https://github.com/yourusername/hexgraph.git
+=======
+   git clone https://github.com/superhexa/hexgraph.git
+>>>>>>> a063399 (Support docker)
    cd hexgraph
    ```
 
@@ -56,8 +68,12 @@ To get Hexgraph up and running on your local machine, follow these steps:
 4. **Install Dependencies**
 
    ```bash
+<<<<<<< HEAD
    pip install Flask
    pip install FlashSQL
+=======
+   pip install -r requirements.txt
+>>>>>>> a063399 (Support docker)
    ```
 
 5. **Run the Application**
@@ -68,6 +84,27 @@ To get Hexgraph up and running on your local machine, follow these steps:
 
    The application will start and be available at `http://127.0.0.1:1020`.
 
+<<<<<<< HEAD
+=======
+### Run via Docker
+
+If you prefer to run Hexgraph via Docker, follow these steps:
+
+1. **Build the Docker Image**
+
+   ```bash
+   docker build -t hexgraph .
+   ```
+
+2. **Run the Docker Container**
+
+   ```bash
+   docker run -p 1020:1020 hexgraph
+   ```
+
+   The application will be available at `http://127.0.0.1:1020` in your browser.
+
+>>>>>>> a063399 (Support docker)
 ### Usage
 
 1. **Access the Application**
@@ -86,7 +123,11 @@ To get Hexgraph up and running on your local machine, follow these steps:
    - You can also view posts by navigating to `http://127.0.0.1:1020/post/<post_id>`, replacing `<post_id>` with the actual ID of the post.
 
 ## Live preview
+<<<<<<< HEAD
 - https://hexgraph.catway.org
+=======
+- https://pvfd.online
+>>>>>>> a063399 (Support docker)
 
 ## Contributing
 
@@ -95,3 +136,9 @@ Feel free to submit issues, fork the repository, and create pull requests. All c
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+<<<<<<< HEAD
+=======
+```
+
+This now includes instructions for running the app via Docker. Let me know if you need any further changes!
+>>>>>>> a063399 (Support docker)

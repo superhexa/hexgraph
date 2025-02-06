@@ -2,7 +2,13 @@ from flask import Flask, render_template, request, redirect, url_for
 from FlashSQL import Client
 import uuid  
 from datetime import datetime
+<<<<<<< HEAD
 
+=======
+import os
+
+port = int(os.getenv("PORT", 1020)) 
+>>>>>>> a063399 (Support docker)
 app = Flask(__name__)
 db = Client('database.db')
 
@@ -27,5 +33,10 @@ def view_post(post_id):
     post['views'] = post.get('views', 0) + 1; db.set(post_id, post)
     return render_template('post.html', title=post['title'], content=post['content'], timestamp=post['timestamp'], views=post['views']) if post else ("Post not found", 404)
 
+<<<<<<< HEAD
 if __name__ == '__main__':
     app.run(port=1020)
+=======
+app.run(port=port)
+
+>>>>>>> a063399 (Support docker)
